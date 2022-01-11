@@ -1,0 +1,69 @@
+az_resource_group_name = "sql_vm_test"
+location               = "uaenorth"
+environment            = "dev"
+project                = "project1"
+owner                  = "example@maf.ae"
+business_unit          = "SHARE"
+operational_company    = "mafp"
+az_service_principal_name = "xxxxxxxxx"
+client_secret             = "xxxxxxxxxxxxxxxxxxxxxxxxxx"
+accelerated_networking    = true
+az_keyvault_name          = "azkeyxxxxxxxxxx"
+az_key_vault_url          = "https://azkeyxxxxxxx.xxxxxxxx"
+az_virtual_network_name   = "sql_vm_test-vnet"
+az_random_vmpassword_length  = 15
+az_keyvault_secret_name   = "vmpassword"
+az_keyvault_id            = "/subscriptions/6xxxxxxxxxxxxxxxxxxxxxxxxxxxx/xxxxxxxxxx"
+az_subnet_id              = "/subscriptions/6xxxxxxxxxxxxxxxxxxxxxxxxx/xxxxxxxxxxx"
+sequence_of_network_card  = 1
+location-id               = "AZRDN"
+client                    = "AA"
+device-role               = "DB"
+form-factor               = "MI"
+az_vmsize                 = "Standard_DS14_v2"
+delete_os_on_termination_flag = true
+az_image_publisher        = "MicrosoftSQLServer"
+az_image_offer            = "SQL2019-WS2019"
+az_image_sku              = "Enterprise"
+az_image_version          = "latest"
+az_boot_diagnostics_flag  = true
+az_computer_name          = "cloud"
+az_vm_username            = "winxxxxxxx"
+az_sql_license_type       = "PAYG"
+az_sql_connectivity_port  = 1433
+az_sql_connectivity_type  = "PRIVATE"
+az_sql_connectivity_update_password  = "RExxxxxxx@1xxxxxx"
+az_sql_connectivity_update_username  = "clxxxxxxxxxxxxxx"
+az_patching_day_of_week   = "Saturday"
+az_patching_maintenance_duration_mins  = 60
+az_patching_maintenance_starting_hour  = 2
+az_encryption_enabled_flag             = true
+az_encryption_password                 = "Huxxxxx@34xxxxxx"
+is_backup_enabled                      = true
+az_retention_period                    = 30
+az_system_databases_backup_enabled_flag  = true
+az_storage_blob_endpoint               = "https://stoxxxxxxxxxxxxxxxxxx"
+az_storage_account_access_key          = "Lxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+az_full_backup_frequency               = "Daily"
+az_full_backup_start_hour              = 21
+az_full_backup_window_in_hours         = 21
+az_log_backup_frequency_in_minutes     = 60
+az_ip_configuration_name               = "Internal"
+default_network_security_group_inbound = [
+    {
+      "name"                      : "Windows",
+      "priority"                  : "100",
+      "direction"                 : "Inbound",
+      "access"                    : "Allow",
+      "protocol"                  : "Tcp",
+      "destination_port_ranges"   : [],
+      "source_address_prefix"     : "3389",
+      "destination_address_prefix": "*"
+    }
+]
+
+default_network_security_group_outbound = []
+az_nsg_sequence                         = "001"
+location_abbreviation                   = "uaenorth"
+sequence_of_virtual_machine             = 1
+sequence_of_mssql_virtual_machine       = 1

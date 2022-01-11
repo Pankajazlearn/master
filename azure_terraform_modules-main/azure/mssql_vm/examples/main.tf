@@ -1,0 +1,64 @@
+provider "azurerm" {
+  features {}
+}
+
+module "mssql_vm" {
+  source              = "../"
+  az_resource_group_name = var.az_resource_group_name
+  owner               = var.owner
+  business_unit       = var.business_unit
+  operational_company = var.operational_company
+  client_secret       = var.client_secret
+  az_service_principal_name = var.az_service_principal_name
+  accelerated_networking    = var.accelerated_networking
+  az_keyvault_name          = var.az_keyvault_name
+  az_key_vault_url          = var.az_key_vault_url
+  az_virtual_network_name   = var.az_virtual_network_name
+  az_random_vmpassword_length  = var.az_random_vmpassword_length
+  az_keyvault_secret_name   = var.az_keyvault_secret_name
+  az_keyvault_id            = var.az_keyvault_id
+  az_subnet_id              = var.az_subnet_id
+  sequence_of_network_card  = var.sequence_of_network_card
+  location-id               = var.location-id
+  client                    = var.client
+  device-role               = var.device-role
+  form-factor               = var.form-factor
+  sequence_of_virtual_machine = var.sequence_of_virtual_machine
+  az_vmsize                 = var.az_vmsize
+  delete_os_on_termination_flag = var.delete_os_on_termination_flag
+  az_image_publisher        = var.az_image_publisher
+  az_image_offer            = var.az_image_offer
+  az_image_sku              = var.az_image_sku
+  az_image_version          = var.az_image_version
+  az_boot_diagnostics_flag  = var.az_boot_diagnostics_flag
+  az_storage_account_uri    = var.az_storage_account_uri
+  az_computer_name          = var.az_computer_name
+  az_vm_username            = var.az_vm_username
+  az_sql_license_type       = var.az_sql_license_type
+  az_sql_connectivity_port  = var.az_sql_connectivity_port
+  az_sql_connectivity_type  = var.az_sql_connectivity_type
+  az_sql_connectivity_update_password  = var.az_sql_connectivity_update_password
+  az_sql_connectivity_update_username  = var.az_sql_connectivity_update_username
+  az_patching_day_of_week   = var.az_patching_day_of_week
+  az_patching_maintenance_duration_mins  = var.az_patching_maintenance_duration_mins
+  az_patching_maintenance_starting_hour  = var.az_patching_maintenance_starting_hour
+  az_encryption_enabled_flag             = var.az_encryption_enabled_flag
+  az_encryption_password                 = var.az_encryption_password
+  is_backup_enabled                      = var.is_backup_enabled
+  az_retention_period                    = var.az_retention_period
+  az_system_databases_backup_enabled_flag  = var.az_system_databases_backup_enabled_flag
+  az_storage_blob_endpoint               = var.az_storage_blob_endpoint
+  az_storage_account_access_key          = var.az_storage_account_access_key
+  az_full_backup_frequency               = var.az_full_backup_frequency
+  az_full_backup_start_hour              = var.az_full_backup_start_hour
+  az_full_backup_window_in_hours         = var.az_full_backup_window_in_hours
+  az_log_backup_frequency_in_minutes     = var.az_log_backup_frequency_in_minutes
+  az_ip_configuration_name               = var.az_ip_configuration_name
+  default_network_security_group_inbound = var.default_network_security_group_inbound
+  default_network_security_group_outbound = var.default_network_security_group_outbound
+  az_nsg_sequence            = var.az_nsg_sequence
+  environment                = var.environment
+  project                    = var.project
+  location_abbreviation      = var.location_abbreviation
+  location                   = var.location
+}

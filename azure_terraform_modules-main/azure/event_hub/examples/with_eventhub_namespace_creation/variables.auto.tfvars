@@ -1,0 +1,17 @@
+environment            = "dev"
+project                = "example"
+owner                  = "example@mail.ae"
+business_unit          = "BU"
+operational_company    = "OpCo"
+location               = "uaenorth"
+location_abbreviation  = "un"
+
+create_eventhub_namespace      = true
+az_resource_group_name         = "test-examples"
+application_name               = "app"
+az_eventhub_namespace_sequence = "009"
+az_eventhub_sequence           = "009"
+az_eventhub_namespace_sku      = "Standard"
+az_eventhub_namespace_capacity = "1"
+az_eventhub_partition_count    = "2"
+az_eventhub_message_retention  = "7"

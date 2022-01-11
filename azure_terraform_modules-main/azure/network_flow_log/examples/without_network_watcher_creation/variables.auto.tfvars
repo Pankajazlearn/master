@@ -1,0 +1,12 @@
+environment            = "dev"
+project                = "example"
+owner                  = "example@mail.ae"
+business_unit          = "BU"
+operational_company    = "OpCo"
+location               = "uaenorth"
+
+az_nsg_id              = "/subscriptions/646497f2-cf94-40d9-9ea0-0bb44fcce127/resourceGroups/test-examples/providers/Microsoft.Network/networkSecurityGroups/exapmle-nsg"
+location_abbreviation  = "un"
+az_storage_account_name  = "examplestorageacc20"
+az_storage_account_resource_group_name = "test-examples"
+az_network_watcher_flow_log_sequence = "009"

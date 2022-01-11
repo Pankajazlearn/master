@@ -1,0 +1,8 @@
+environment            = "dev"
+project                = "example"
+owner                  = "example@mail.ae"
+business_unit          = "BU"
+operational_company    = "OpCo"
+location               = "uaenorth"
+az_resource_group_name = "test-examples"
+az_nsg_sequence        = "009"
